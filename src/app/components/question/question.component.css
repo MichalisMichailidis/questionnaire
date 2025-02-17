@@ -1,0 +1,179 @@
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  padding: 2rem 0;
+  overflow-y: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.question-container {
+  width: 100%;
+  max-width: 800px;
+  padding: 1.25rem;
+}
+
+.question-screen {
+  background-color: #fff;
+  padding: 1.25rem;
+}
+
+.question-screen h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #25292B;
+  margin-bottom: 0.5rem;
+}
+
+.options-container {
+  margin: 2rem 0 1rem 0;
+}
+
+.option {
+  margin: 0.625rem 0;
+  padding: 0.625rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  border: 1px solid #DBDEE0;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #F3F9FD;
+}
+
+.option.selected {
+  background-color: #F3F9FD;
+  border: 1px solid #3498DB;
+  border-radius: 4px;
+}
+
+.form-check-input:checked {
+  background-color: #3498DB;
+  border-color: #3498DB;
+}
+
+.form-check-input,
+.form-check-label {
+  cursor: pointer;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.25rem;
+}
+
+.result-screen {
+  text-align: center;
+  max-width: 465px;
+  margin: 0 auto;
+}
+
+.result-screen h2 {
+  color: #055285;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.url-box {
+  padding: 0.9375rem;
+  margin: 1.25rem 0;
+}
+
+.url-box a {
+  color: #50585E;
+  word-break: break-word;
+}
+
+.url-box a:hover {
+  text-decoration: underline;
+}
+
+.action-buttons-container {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #EBEDF0;
+  padding: 0.4rem 0;
+  z-index: 1000;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  max-width: 750px;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+
+.back-btn {
+  padding: 0.75rem 1rem;
+  border: 1px solid #DBDEE0;
+  color:#25292B;
+}
+
+.back-btn:hover {
+  background-color: #F4F6F7;
+  color:#25292B;
+}
+
+.continue-btn {
+  background-color: #1F74AD !important;
+  padding: 0.75rem 1.5rem;
+}
+
+.continue-btn:hover {
+  background-color: #055285 !important;
+}
+
+.optional-label {
+  color: #50585E;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  background-color: #EBEEF0;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+@media (max-width: 500px) {
+  .content-wrapper {
+    padding: 1rem 0 5rem;
+  }
+
+  .question-container {
+    padding: 0;
+  }
+
+  .action-buttons {
+    gap: 0.5rem;
+  }
+
+  .continue-btn {
+    width: 100%;
+  }
+}

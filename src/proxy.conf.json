@@ -1,0 +1,26 @@
+{
+  "/searchq": {
+    "target": "https://www.doctoranytime.gr",
+    "secure": true,
+    "changeOrigin": true,
+    "headers": {
+      "Origin": "https://www.doctoranytime.gr",
+      "Accept": "application/json"
+    }
+  },
+  "/s": {
+    "target": "https://www.doctoranytime.gr",
+    "secure": true,
+    "changeOrigin": true
+  },
+  "/searchq/*": {
+    "target": "https://www.doctoranytime.gr",
+    "secure": true,
+    "changeOrigin": true
+  },
+  "/s/*": {
+    "target": "https://www.doctoranytime.gr",
+    "secure": true,
+    "changeOrigin": true
+  }
+}
